@@ -1,0 +1,6 @@
+apiVersion: v2
+name: express-app
+description: A simple Node.js Express app deployed with Kubernetes + Helm
+type: application
+version: 1.0.0
+appVersion: "1.0.0"

@@ -1,0 +1,15 @@
+replicaCount: 2
+
+image:
+  repository: admintita/express-app
+  tag: latest
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 3000
+  nodePort: 30080
+
+ingress:
+  enabled: true
+  host: express-app.local
