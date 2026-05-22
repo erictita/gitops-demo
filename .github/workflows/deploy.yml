@@ -52,4 +52,5 @@ jobs:
           git add k8s/deployment.yaml
           git commit -m "Update image to ${{ github.sha }}" || echo "No changes"
 
+          git pull --rebase origin main
           git push
