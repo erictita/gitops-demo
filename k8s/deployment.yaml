@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: express-app
-          image: admintita/express-app:ba38339d31d2db67141374a3d483de9b4d1351b1
+          image: admintita/express-app:1cdc91b9cffb355a5f392cb9a2388bb702637481
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
