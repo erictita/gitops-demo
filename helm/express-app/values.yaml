@@ -2,8 +2,7 @@ replicaCount: 2
 
 image:
   repository: admintita/express-app
-  tag: latest
-
+  tag: <git-sha>
 service:
   type: NodePort
   port: 80
