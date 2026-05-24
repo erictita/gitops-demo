@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: admintita/express-app
-  tag: latest
+  tag: ""   # CI/CD will inject git SHA or version
 
 service:
   type: NodePort
@@ -12,4 +12,7 @@ service:
 
 ingress:
   enabled: true
+  className: nginx
   host: express-app.local
+  path: /
+  pathType: Prefix
