@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: admintita/express-app
-  tag: ""   # CI/CD will inject git SHA or version
+  tag: latest
 
 service:
   type: NodePort
